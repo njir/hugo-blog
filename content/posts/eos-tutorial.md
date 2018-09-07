@@ -1,5 +1,5 @@
 +++
-title = "EOS에 Smart Contract 생성해보기(old version)"
+title = "EOS에 Smart Contract 생성해보기"
 description = "eos 소스코드 다운부터 로컬넷에 Smart Contract 띄우기까지 삽질기"
 tags = [
     "eos",

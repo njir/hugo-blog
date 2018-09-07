@@ -1,10 +1,10 @@
 +++
-title = "Advanced Java - 객체지향, 기본 구조, Keyword"
+title = "Advanced Java01 - 객체지향, 기본 구조, Keyword"
 description = "온라인 T아카데미 강의 'Advanced Java 정리' 객체지향, 기본 구조"
 tags = [
     "java",
 ]
-date = "2015-03-27"
+date = "2015-03-07"
 menu = "main"
 +++
 

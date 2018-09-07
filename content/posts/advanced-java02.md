@@ -1,10 +1,10 @@
 +++
-title = "Advanced Java - 오브젝트, 예외처리, 제너릭"
+title = "Advanced Java02 - 오브젝트, 예외처리, 제너릭"
 description = "온라인 T아카데미 강의 'Advanced Java 정리' 오브젝트, 예외처리, 제너릭에 대한 내용"
 tags = [
     "java",
 ]
-date = "2015-03-29"
+date = "2015-03-07"
 menu = "main"
 +++
 
