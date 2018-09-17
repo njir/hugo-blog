@@ -319,5 +319,5 @@ $ cleos push action tak hi '["world"]' -p tak
 
 ![helloworld](/images/new_helloworld.png)
 
-반년 전에 해서 그런지, eos가 열심히하고 있어서 그런지 이번에는 덜 해맸다.
+반년전에 해서 그런지, eos가 열심히 하고있어서 그런지 이번에는 덜 헤맸다.
 
