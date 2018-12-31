@@ -16,4 +16,4 @@ Here are my github, cover letter and resume.
 
 - (GitHub) https://github.com/njir
 - (Online CV) https://njir.github.io/online-cv
-- (Resume, updated) https://drive.google.com/file/d/1VsooK6QvBu_oIF4NCOUIA3xZN1tmiPxv/view?usp=sharing
+- (Resume) https://drive.google.com/file/d/1VsooK6QvBu_oIF4NCOUIA3xZN1tmiPxv/view?usp=sharing
