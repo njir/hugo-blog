@@ -1,9 +1,9 @@
 # Site settings
-baseurl = "https://njir.github.io/"
+baseurl = "https://tak-bro.github.io/"
 languageCode = "en"
 title = "DevNote"
 theme = "hugo-theme-cactus-plus"
-googleAnalytics = "UA-46214266-2"
+googleAnalytics = "UA-145829778-1"
 # Set the value to true if your site include CJK (Chinese, Japanese, and Korean languages) characters
 hasCJKLanguage = true
 
