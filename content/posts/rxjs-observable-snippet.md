@@ -189,7 +189,7 @@ const subscription = firstFiveSecond$.subscribe(createSubscriber('one'));
 // one.complete
 ```
 
-```creatingInteval$``` 함수는 주어진 시간마다 observable의 next를 emit하는 역할을 한다. ```createSubscriber``` 함수는 observable을 subscribe하는 함수로, 단순히 console.log를 찍게 된다.
+`creatingInteval$` 함수는 주어진 시간마다 observable의 next를 emit하는 역할을 한다. ```createSubscriber``` 함수는 observable을 subscribe하는 함수로, 단순히 console.log를 찍게 된다.
 
 ***
 
@@ -200,7 +200,7 @@ const subscription = firstFiveSecond$.subscribe(createSubscriber('one'));
 Observable를 만들 수 있는 operator에 대해 알아보자. 간단히 얘기하자면 ```operator```는 observable의 **wrapper**에 불과하다
 
 ### interval
-```interval```은 시간 간격을 지정하고 data를 emit한다. 아래 코드는 500ms의 인터벌을 가지면서, ```take``` operator로 data를 3개까지만 처리한다. 
+`interval`은 시간 간격을 지정하고 data를 emit한다. 아래 코드는 500ms의 인터벌을 가지면서, ```take``` operator로 data를 3개까지만 처리한다. 
 
 ```javascript
 import Rx from 'rxjs/Rx';
@@ -226,7 +226,7 @@ Rx.Observable.interval(500)
 ```
 
 ### timer
-```interval```과는 달리, 주어진 시간이 지나면 data를 emit하는 Observable을 만든다.
+`interval`과는 달리, 주어진 시간이 지나면 data를 emit하는 Observable을 만든다.
 
 ```javascript
 Rx.Observable.timer(5000)
@@ -243,8 +243,8 @@ Rx.Observable.timer(1000, 500) // 1초 후에 500ms마다 데이터 처리
 
 ### of, from
 
-```of```는 주어진 arg를 Observable sequence로 바꾼다. <br>
-참고로 ```of``` 안에 array가 들어가면 안된다. array 자체를 하나의 observable로 인식해버린다. array의 데이터들을 sequence로 바꾸려면 ```from```을 쓰자.
+`of`는 주어진 arg를 Observable sequence로 바꾼다. <br>
+참고로 `of` 안에 array가 들어가면 안된다. array 자체를 하나의 observable로 인식해버린다. array의 데이터들을 sequence로 바꾸려면 `from`을 쓰자.
 
 ```javascript
 // of operator
@@ -274,7 +274,7 @@ Rx.Observable.from([23, 10, 4, 'hey'])
 
 ### throw 
 
-```throw```는 observable의 error를 emit하기 위해 쓰인다.
+`throw`는 observable의 error를 emit하기 위해 쓰인다.
 
 ```javascript
 Rx.Observable.throw(new Error('hey'))
@@ -286,7 +286,7 @@ Rx.Observable.throw(new Error('hey'))
 ```
 
 ### empty, never
-```empty```는 complete만 emit하며, ```never```는 아무런 데이터도 generate하지 않는다.
+`empty`는 complete만 emit하며, `never`는 아무런 데이터도 generate하지 않는다.
 	
 ```javascript
 Rx.Observable.empty()
@@ -351,9 +351,9 @@ readdir$('./src-server')
 ```
 
 ### fromPromise
-```bindNodeCallback```과 마찬가지로 Promise로부터 Observable을 만든다.
+`bindNodeCallback`과 마찬가지로 Promise로부터 Observable을 만든다.
 
-```javascript
+```
 function getItem() {
     return new Promise((resolve, reject) => {
     	setTimeout(() => {
@@ -375,7 +375,7 @@ Rx.Observable.fromPromise(getItem())
 
 # Subject 
 
-```Subject```는 observer와 Observable을 둘 다 상속 받는 객체
+`Subject`는 observer와 Observable을 둘 다 상속 받는 객체
 <br> reactive 코드와 그렇지 않은 코드를 연결할 때 사용될 수 있다고 하는데, 무슨 말인지 아직 정확히 이해를 못했다.
 <br> Subject를 통해 subject를 구독하는 모든 observer들에게 알려줄 수 있다. (notify 역할)
 
@@ -451,7 +451,7 @@ Asyncsubject는 오직 complete이 발생한 후에 emit 된다. 그리고 Obser
 
 ### ReplaySubject
 
-```replay subject```는 opserver가 구독을 시작한 시점과 관계 없이, observable들이 emit한 모든 항목들을 모든 observer에게 배출한다.<br>
+`replay subject`는 opserver가 구독을 시작한 시점과 관계 없이, observable들이 emit한 모든 항목들을 모든 observer에게 배출한다.<br>
 
 ```javascript
 const replay$ = new Rx.ReplaySubject(3);

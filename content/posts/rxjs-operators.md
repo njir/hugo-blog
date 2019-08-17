@@ -18,7 +18,7 @@ menu = "main"
 
 ### do
 
-```do```는 새로운 데이터가 emit 될 때마다 매번 실행된다. output처럼 do 데이터와 map 데이터가 서로 다르다.
+`do`는 새로운 데이터가 emit 될 때마다 매번 실행된다. output처럼 do 데이터와 map 데이터가 서로 다르다.
 
 ```javascript
 Rx.Observable.range(1, 5)
@@ -43,7 +43,7 @@ Rx.Observable.range(1, 5)
 
 ### finally
 
-```finally```는 subscribe가 완료(complete)된 후에 실행된다.
+`finally`는 subscribe가 완료(complete)된 후에 실행된다.
 
 ```javascript
 Rx.Observable.range(1, 5)
@@ -68,7 +68,7 @@ Rx.Observable.range(1, 5)
 
 ### filter
 
-말그대로 ```filter```의 조건에 만족하는 Observable의 데이터만 emit한다.
+말그대로 `filter`의 조건에 만족하는 Observable의 데이터만 emit한다.
 
 ```javascript
 Rx.Observable(1, 10)
@@ -117,7 +117,7 @@ simple$.last()
 
 ### single
 
-```single``` operator는 next를 한번만 emit해야 한다. 그렇지 않으면 에러가 발생한다.
+`single` operator는 next를 한번만 emit해야 한다. 그렇지 않으면 에러가 발생한다.
 
 ```javascript
 const single$ = new Rx.Observable(observer => {
@@ -140,8 +140,8 @@ single$.single()
 
 ### take, skip
 
-- ```take```: observable에서 ```take```의 인자 만큼 data를 처리한다.<br>
-- ```skip```: 말그대로 data를 skip한 후 나머지 데이터만 처리한다.
+- `take`: observable에서 `take`의 인자 만큼 data를 처리한다.<br>
+- `skip`: 말그대로 data를 skip한 후 나머지 데이터만 처리한다.
 
 ```javascript
 const simple$ = new Rx.Observable(observer => {
@@ -164,8 +164,8 @@ simple$.take(2)
 
 ### skipWhile, takeWhile
 
-- ```skipWhile```: 해당 expression이 false인 데이터는 건너뛴 후 데이터를 emit.
-- ```takeWhile```: skipWhile과 유사하지만 expression이 true일 때까지 데이터 emit
+- `skipWhile`: 해당 expression이 false인 데이터는 건너뛴 후 데이터를 emit.
+- `takeWhile`: skipWhile과 유사하지만 expression이 true일 때까지 데이터 emit
 
 ```javascript
 Rx.Observable.interval(500)
@@ -183,7 +183,7 @@ Rx.Observable.interval(500)
 ```
 
 ### skipUntil, takeUntil
-```skipUntil```, ```takeUntil```은 Observable, Subject 데이터를 인자로 갖는다.
+`skipUntil`, `takeUntil`은 Observable, Subject 데이터를 인자로 갖는다.
 
 ```javascript
 Rx.Observable.interval(500)
@@ -225,7 +225,7 @@ Rx.Observable(1,2,3)
 ### concat
 
 두 개의 Observable을 combine하여 emit한다. 
-```merge```와 달리 순서가 중요하다(output 참고). 
+`merge`와 달리 순서가 중요하다(output 참고). 
 
 ```javascript
 Rx.Observable.range(1,5)
