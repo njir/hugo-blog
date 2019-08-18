@@ -14,6 +14,6 @@ On now, I’m developing web service for e-commerce using Node.js, Serverless, R
 <br>
 Here are my github, cover letter and resume.
 
-- (GitHub) https://github.com/njir
+- (GitHub) https://github.com/tak-bro
 - (Korean_Resume) http://bit.ly/tak_resume_kor
 - (English_Resume) http://bit.ly/tak_resume_eng
